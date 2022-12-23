@@ -1,5 +1,7 @@
 export default function genHome(){
     const hContent = document.getElementById('content');
+    hContent.innerHTML = '';
+    hContent.className = '';
     const about = document.createElement('h2');
     const description = document.createElement('h3');
     about.textContent = 'About';
