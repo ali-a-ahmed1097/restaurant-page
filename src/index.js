@@ -1,4 +1,6 @@
 import genHome from "./home";
+import genMenu from "./menu";
+import genContact from "./contact";
 import img from "./bg-image/hyrule.jpg";
 import './style.css'
 
@@ -22,9 +24,11 @@ homeTab.addEventListener('click', () => {
 });
 
 menuTab.addEventListener('click', () => {
+    genMenu();
     selectTab(menuTab, homeTab, contactTab);
 });
 
 contactTab.addEventListener('click', () => {
+    genContact();
     selectTab(contactTab, menuTab, homeTab);
 });
