@@ -14,3 +14,20 @@ ul {
 .selected {
     background-color: white;
 }
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 900px;
+    gap: 100px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.contacts > div {
+    width: 200px;
+    height: 150px;
+    box-shadow: 10px 5px 15px darkgray;
+    background-color: rgb(255 255 255 / 28%);
+}

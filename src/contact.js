@@ -1,7 +1,8 @@
 export default function genContact() {
     const hContent = document.getElementById('content');
     hContent.innerHTML = '';
-    hContent.className = '';
+    hContent.className = 'contacts';
+    hContent.style='text-align: center;';
 
     const addressDiv = document.createElement('div');
     const addressHead = document.createElement('h2');
