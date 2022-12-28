@@ -35,10 +35,31 @@ ul {
 .menus {
     background-color: white;
     border: 2px solid black;
+    padding: 10px;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-items: end;
+}
+
+.item > div:nth-child(1), .item > div:nth-child(2) {
+    justify-self: start;
+}
+
+.item > div:nth-child(1), .item > div:nth-child(3) {
+    align-self: start;
+}
+
+.item > div:nth-child(2) {
+    font-size: 10px;
+    font-style: italic;
 }

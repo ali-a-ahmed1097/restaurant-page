@@ -17,6 +17,8 @@ function buildMenu(menu, menuItems) {
         item.appendChild(ingredients);
         item.appendChild(price);
 
+        item.classList.add('item');
+
         menu.appendChild(item);
     }
 }
